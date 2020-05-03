@@ -11,3 +11,4 @@ uuid = "0.8"
 mime = "0.3"
 iso639-1 = "0.3"
 chrono = "0.4"
+serde = { version = "1", features = ["derive"] }

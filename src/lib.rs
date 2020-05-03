@@ -2,6 +2,7 @@ extern crate uuid;
 extern crate mime;
 extern crate iso639_1;
 extern crate chrono;
+extern crate serde;
 
 // Principal interface
 pub mod language;
