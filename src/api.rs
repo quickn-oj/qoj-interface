@@ -7,23 +7,23 @@ pub struct Query {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct JwtHeader {
+pub struct JwtHeader<'a> {
     // JWT Token
     // Must be 'JWT ${token}' form
-    authoriztaion: String,
+    authoriztaion: &'a str,
 }
 
 // QOJ standard level
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Standard {
+pub struct Standard<'a> {
     level: u8,
-    version: String,
+    version: &'a str,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct ApiHeader {
-    name: String,
-    url: String,
-    version: String,
-    support_standard: Standard,
+pub struct ApiHeader<'a> {
+    name: &'a str,
+    url: &'a str,
+    version: &'a str,
+    support_standard: Standard<'a>,
 }
