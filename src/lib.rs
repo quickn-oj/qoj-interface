@@ -3,13 +3,17 @@ extern crate mime;
 extern crate iso639_1;
 extern crate chrono;
 
-mod language;
-mod server;
-mod extension;
-mod problem;
-mod tag;
-mod answer;
-mod challenger;
+// Principal interface
+pub mod language;
+pub mod server;
+pub mod extension;
+pub mod problem;
+pub mod tag;
+pub mod answer;
+pub mod challenger;
+
+// API interface
+pub mod api;
 
 #[cfg(test)]
 mod tests {
