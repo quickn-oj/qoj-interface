@@ -21,6 +21,9 @@ pub struct Standard<'a> {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
+pub struct EmptyHeader;
+
+#[derive(Serialize, Deserialize, Debug)]
 pub struct ApiHeader<'a> {
     name: &'a str,
     url: &'a str,
